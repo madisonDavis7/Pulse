@@ -8,9 +8,6 @@ html {
 }
 
 /* hero section */
-.hero-img-cont {
-    width: 100vw;
-}
 
 .hero-img {
     width: 100%;
@@ -18,4 +15,20 @@ html {
     object-fit: cover;
     object-position: center;
     position: relative;
+}
+
+/* about section*/
+.main-about-cont {
+    border: red solid 2px;
+}
+
+
+/* music section */
+
+/* venue section */
+
+/* footer section */
+.footer-sect {
+    background-color: black;
+    color: white;
 }
