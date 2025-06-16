@@ -4,7 +4,7 @@
 
 body,
 html {
-    background: black;
+    background: white;
 }
 
 /* hero section */
@@ -20,8 +20,33 @@ html {
 /* about section*/
 .main-about-cont {
     border: red solid 2px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
 }
 
+.left-img-about {
+    width: 25vw;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.right-img-about {
+    width: 25vw;
+    height: 80vh;
+    object-fit: cover;
+    margin-left: 2rem;
+}
+
+.about-txt {
+    border: blue 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50vw;
+}
 
 /* music section */
 
