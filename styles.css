@@ -183,6 +183,34 @@ html {
     border-right: none;
 }
 
+/* contact section */
+.main-contact-sect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 2px blue;
+    margin-bottom: 2rem;
+}
+
+.contact-img-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-img {
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.contact-form {
+    display: column;
+    align-items: center;
+    width: 50vw;
+    text-align: center;
+}
+
 /* footer section */
 .footer-sect {
     background-color: black;
