@@ -99,6 +99,18 @@ html {
     margin-top: 2rem;
 }
 
+.music-img-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.barcode {
+    font-family: "Libre Barcode 39", sans-serif;
+    font-size: clamp(5rem, 3vw, 1.5rem);
+}
+
 /* venue section */
 
 /* footer section */
