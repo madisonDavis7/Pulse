@@ -4,7 +4,16 @@
 
 body,
 html {
-    background: white;
+    overflow-x: hidden;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-color: black;
+    color: white;
+    padding-bottom: 2rem;
 }
 
 /* hero section */
@@ -20,7 +29,7 @@ html {
 /* about section*/
 .main-about-cont {
     border: red solid 2px;
-    margin-top: 2rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: row;
 }
@@ -50,15 +59,15 @@ html {
 .section-title {
     font-size: clamp(3rem, 2vw, 2rem);
     font-weight: 700;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     font-family: "Orbitron", sans-serif;
     border: red solid 2px;
 }
 
 .about-para {
     font-size: clamp(1.2rem, 1.5vw, 1rem);
-    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 /* music section */
@@ -76,7 +85,7 @@ html {
 }
 
 .about-para.music {
-    margin-top: 1rem;
+    padding-top: 1rem;
     font-size: clamp(1.2rem, 1.5vw, 1rem);
     border: green 2px solid;
 }
@@ -96,7 +105,7 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 .music-img-cont {
@@ -111,7 +120,7 @@ html {
     font-size: clamp(5rem, 3vw, 1.5rem);
     border: red 2px solid;
     line-height: .5;
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 /* venue section */
@@ -121,12 +130,12 @@ html {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 10vh 10vh;
     width: 100%;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
 
 .box {
-    border: black 3px solid;
+    border: white 3px solid;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -188,10 +197,21 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: solid 2px blue;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
+.contact-img {
+    width: 100vw;
+    max-width: 100vw;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    margin-top: 12vw;
+    margin-bottom: 12vw;
+}
+
+.contact-form {}
 
 /* footer section */
 .footer-sect {
