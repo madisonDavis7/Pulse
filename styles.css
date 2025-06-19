@@ -194,14 +194,28 @@ html {
 
 .contact-img-cont {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    width: 50vw;
+    border: red solid 2px;
+}
+
+.hex-row {
+    display: flex;
+    justify-content: center;
+
+}
+
+.hex-row-center {
+    margin-top: -7vw;
 }
 
 .contact-img {
-    width: 50vw;
-    height: auto;
+    width: 15vw;
+    aspect-ratio: 1/1;
     object-fit: cover;
+    clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+    margin: 0 0.2vw;
 }
 
 .contact-form {
