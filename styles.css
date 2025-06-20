@@ -292,6 +292,13 @@ section {
     outline: none;
 }
 
+.contact-form textarea:hover,
+.contact-form input:hover {
+    background: #222;
+    scale: 1.1;
+    transition: background 0.2s, scale 0.2s;
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
     background: #222;
