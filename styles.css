@@ -112,7 +112,6 @@ section {
     padding-top: 1rem;
     padding-bottom: 2rem;
     font-family: "Orbitron", sans-serif;
-    border: red solid 2px;
 }
 
 .about-para {
@@ -147,7 +146,7 @@ section {
 }
 
 .music-logo {
-    width: 15vw;
+    width: 10vw;
     height: auto;
     object-fit: cover;
 }
@@ -313,13 +312,6 @@ section {
     max-width: 400px;
     margin: 0 auto;
     text-align: center;
-}
-
-.contact-title {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-    font-family: "Orbitron", sans-serif;
-    color: #fff;
 }
 
 .contact-form label {
