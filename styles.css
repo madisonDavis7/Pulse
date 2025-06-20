@@ -305,6 +305,15 @@ section {
     border: 1px solid #fff;
 }
 
+/* added because hovering over btn was causing below elements to move down */
+.submit-btn-wrapper {
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
 .submit-btn {
     background: #fff;
     color: #111;
@@ -314,13 +323,18 @@ section {
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    display: inline-block;
+    transform-origin: center;
+    will-change: transform;
+    margin-bottom: 0;
 }
 
 .submit-btn:hover {
     background: #111;
     color: #fff;
     border: 1px solid #fff;
+    transform: scale(1.1);
 }
 
 /* footer section */

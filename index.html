@@ -110,7 +110,10 @@
                             <label for="contact-message">Message</label>
                             <textarea id="contact-message" name="message" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="submit-btn">Submit</button>
+                        <div class="submit-btn-wrapper">
+                            <button type="submit" class="submit-btn">Submit</button>
+
+                        </div>
                     </form>
                 </div>
             </div>
@@ -123,7 +126,13 @@
             <img src="images/logo-white.svg" alt="Personal Logo" class="footer-logo">
         </div>
     </footer>
-
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for contacting us! We look forward to getting your message and will respond as soon as we can!');
+            this.reset();
+        });
+    </script>
 </body>
 
 </html>
