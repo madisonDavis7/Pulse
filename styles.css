@@ -169,7 +169,6 @@ section {
 .barcode {
     font-family: "Libre Barcode 128", sans-serif;
     font-size: clamp(5rem, 3vw, 1.5rem);
-    border: red 2px solid;
     line-height: .5;
     padding-top: 1rem;
 }
