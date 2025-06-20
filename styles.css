@@ -78,7 +78,6 @@ section {
 
 /* about section*/
 .main-about-cont {
-    border: red solid 2px;
     padding-top: 2rem;
     display: flex;
     flex-direction: row;
@@ -98,7 +97,6 @@ section {
 }
 
 .about-txt {
-    border: blue 2px solid;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -138,7 +136,6 @@ section {
 .about-para.music {
     padding-top: 1rem;
     font-size: clamp(1.2rem, 1.5vw, 1rem);
-    border: green 2px solid;
 }
 
 .section-title.music {
@@ -151,12 +148,17 @@ section {
     object-fit: cover;
 }
 
+.music-logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
 .music-logo-cont {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .music-img-cont {
