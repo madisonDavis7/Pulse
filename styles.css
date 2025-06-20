@@ -317,7 +317,38 @@ section {
 }
 
 /* footer section */
-.footer-sect {
+
+.white-line {
+    border: none;
+    width: 100%;
+    border-top: 3px solid white;
+    margin: 0;
     background-color: black;
+}
+
+footer {
+    background-color: black;
+    height: 8vw;
     color: white;
+}
+
+.footer-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-txt {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    text-align: center;
+    padding-top: 1.5vw;
+    padding-right: 1vw;
+
+}
+
+.footer-logo {
+    width: 4vw;
+    height: auto;
+    display: block;
+
 }
