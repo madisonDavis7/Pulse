@@ -25,19 +25,20 @@
 </head>
 <!-- scrolling nonsense-->
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('scroll', checkFade);
+    window.addEventListener('DOMContentLoaded', checkFade);
+
+    function checkFade() {
         const elements = document.querySelectorAll('.scroll-fade');
-        function checkFade() {
-            elements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 50) {
-                    el.classList.add('visible');
-                }
-            });
-        }
-        window.addEventListener('scroll', checkFade);
-        checkFade();
-    });
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 50 && rect.bottom > 0) {
+                el.classList.add('visible');
+            } else {
+                el.classList.remove('visible');
+            }
+        });
+    }
 </script>
 
 <body>

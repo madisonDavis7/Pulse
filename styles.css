@@ -144,6 +144,24 @@ section {
     padding-top: 1rem;
     padding-bottom: 2rem;
     font-family: "Orbitron", sans-serif;
+    animation: pulse-mid 2.2s infinite;
+}
+
+@keyframes pulse-mid {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.85;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .about-para {
