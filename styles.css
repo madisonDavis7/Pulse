@@ -55,7 +55,7 @@ section {
 
 .hero-img {
     width: 100%;
-    height: auto;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
     display: block;
@@ -80,7 +80,7 @@ section {
 }
 
 .hero-title {
-    font-size: clamp(6rem, 5vw, 2rem);
+    font-size: clamp(2rem, 5vw, 8rem);
     font-weight: 700;
     letter-spacing: 0.1em;
     animation: pulse 2.2s infinite;
@@ -104,7 +104,7 @@ section {
 }
 
 .hero-subtitle {
-    font-size: clamp(2rem, 3vw, 1.5rem);
+    font-size: clamp(1rem, 3vw, 4rem);
     font-weight: 400;
     margin-top: 1rem;
     color: white;
@@ -139,12 +139,14 @@ section {
 }
 
 .section-title {
-    font-size: clamp(3rem, 2vw, 2rem);
+    font-size: clamp(1rem, 8vw, 3rem);
     font-weight: 700;
     padding-top: 1rem;
     padding-bottom: 2rem;
     font-family: "Orbitron", sans-serif;
     animation: pulse-mid 2.2s infinite;
+    z-index: 1;
+    margin: 2rem 0;
 }
 
 @keyframes pulse-mid {
@@ -222,7 +224,7 @@ section {
 
 .barcode {
     font-family: "Libre Barcode 128", sans-serif;
-    font-size: clamp(5rem, 3vw, 1.5rem);
+    font-size: clamp(1rem, 6vw, 6rem);
     line-height: .5;
     padding-top: 1rem;
 }
@@ -244,7 +246,7 @@ section {
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: clamp(2.5rem, 1.5vw, 1rem);
+    font-size: clamp(.5rem, 3vw, 8rem);
 }
 
 /* Top row: fills 12 columns, each box a different width */
@@ -471,3 +473,5 @@ footer {
     height: auto;
     display: block;
 }
+
+/* responsive section */
