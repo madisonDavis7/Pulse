@@ -173,6 +173,10 @@ section {
     padding-right: 1rem;
 }
 
+.mobile-img-break {
+    display: none;
+}
+
 /* music section */
 
 .main-music-cont {
@@ -479,3 +483,53 @@ footer {
 }
 
 /* responsive section */
+@media (max-width: 450px) {
+
+    /* about section */
+    .main-about-cont {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: solid red 2px;
+    }
+
+    .about-txt {
+        width: 90%;
+    }
+
+    .section-title {
+        padding-bottom: 1rem;
+    }
+
+    .about-img-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .left-img-about,
+    .right-img-about {
+        height: 40vh;
+        width: auto;
+    }
+
+    /* mobile only section */
+    .mobile-img-break {
+        display: block;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .mobile-img {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+}
