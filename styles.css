@@ -451,7 +451,7 @@ section {
 .submit-btn {
     background: #fff;
     color: #111;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 0.5rem;
     padding: 0.7rem 2rem;
     font-size: 1.1rem;
@@ -465,9 +465,9 @@ section {
 }
 
 .submit-btn:hover {
-    background: #ffffff;
-    color: #000000;
-    border: 1px solid #fff;
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #fff;
     transform: scale(1.1);
 }
 
@@ -751,6 +751,11 @@ footer {
 }
 
 @media (min-width: 1025px) {
+
+    /* music section */
+    .music-logo-cont {
+        padding-top: 1.5rem;
+    }
 
     /* venue section */
     .box1 {
