@@ -4,6 +4,7 @@ html {
     scroll-padding: 5rem;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 html {
@@ -20,18 +21,25 @@ section {
 /* scrolling nonsense */
 .scroll-fade {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
     transition: opacity 2.2s ease, transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: visible;
 }
 
 .scroll-fade.visible {
     opacity: 1;
-    transform: none;
+    transform: translateY(0);
 }
 
 /*navbar section */
 .navbar-dark .navbar-nav .nav-link {
     color: #ffffff;
+    font-family: "Orbitron", sans-serif;
+}
+
+.navbar-brand {
+    padding-left: 2rem;
+    font-family: "Orbitron", sans-serif;
 }
 
 .nav-link {
@@ -87,6 +95,7 @@ section {
     font-weight: 700;
     letter-spacing: 0.1em;
     animation: pulse 2.2s infinite;
+    font-family: "Orbitron", sans-serif;
 }
 
 @keyframes pulse {
@@ -108,6 +117,7 @@ section {
 
 .hero-subtitle {
     font-size: clamp(1rem, 3vw, 4rem);
+    font-family: "Orbitron", sans-serif;
     font-weight: 400;
     margin-top: 1rem;
     color: white;
@@ -181,6 +191,11 @@ section {
     padding-right: 1rem;
 }
 
+.about-name {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-family: "Orbitron", sans-serif;
+}
+
 .mobile-img-break {
     display: none;
 }
@@ -251,6 +266,7 @@ section {
     padding-bottom: 2rem;
     padding-top: 1rem;
     overflow-x: hidden;
+    font-family: "Orbitron", sans-serif;
 }
 
 .box {
@@ -330,7 +346,7 @@ section {
 }
 
 /* Contact Section Overlay Styles */
-.contact-sect {
+.main-contact-sect {
     position: relative;
     min-height: 60vh;
     display: flex;
@@ -362,7 +378,6 @@ section {
     filter: brightness(0.5);
     margin-top: 0;
     margin-bottom: 0;
-    /* darken for contrast */
 }
 
 .contact-cont {
