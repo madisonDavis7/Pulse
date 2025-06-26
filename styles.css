@@ -647,6 +647,28 @@ footer {
 
 }
 
+/* tablet size */
+@media (min-width: 451px) and (max-width: 1024px) {
+    /* about section */
+    .about-name {
+        font-size: clamp(1.2rem, 3vw, 2.5rem);
+    }
+
+    .left-img-about {
+        height: 50vh;
+
+    }
+    .right-img-about {
+        height: 50vh;
+    }
+    .about-para {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+
 body {
     overflow-x: hidden !important;
 }
