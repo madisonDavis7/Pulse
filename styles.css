@@ -188,14 +188,14 @@ section {
 }
 
 .about-para {
-    font-size: clamp(1rem, 1.5vw, 1rem);
+    font-size: clamp(1rem, 1.5vw, 6rem);
     padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .about-name {
-    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-size: clamp(1.2rem, 3vw, 6rem);
     font-family: "Orbitron", sans-serif;
 }
 
@@ -219,7 +219,7 @@ section {
 
 .about-para.music {
     padding-top: 1rem;
-    font-size: clamp(1rem, 1.5vw, 1rem);
+    font-size: clamp(1rem, 1.5vw, 6rem);
 }
 
 .section-title.music {
