@@ -70,7 +70,6 @@ section {
     height: 100vh;
     object-fit: cover;
     position: relative;
-    border: solid red 2px;
 }
 
 .hero-img-cont {
@@ -78,7 +77,6 @@ section {
     overflow: hidden;
     width: 100%;
     height: 100vh;
-    border: solid blue 2px;
 }
 
 .hero-title-overlay {
@@ -90,7 +88,6 @@ section {
     text-align: center;
     z-index: 5;
     width: 100%;
-    border: solid green 2px;
 }
 
 .hero-title {
@@ -483,7 +480,7 @@ section {
 
 footer {
     background-color: black;
-    height: 6vw;
+    height: 8vw;
     color: white;
 }
 
@@ -492,7 +489,6 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1rem;
 }
 
 .footer-txt {
@@ -710,6 +706,25 @@ footer {
     }
     .box8 {
         grid-column: 9/13;
+    }
+
+    /* contact section */
+    .contact-form label {
+        font-size: 1.5rem;
+    }
+    .submit-btn {
+        font-size: 1.5rem;
+        padding: 0.7rem 2.5rem;
+    }
+
+    /* footer section */
+    .footer-logo {
+        width: 6vw;
+        height: auto;
+    }
+    .footer-txt {
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
 
