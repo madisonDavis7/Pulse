@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Eagle+Lake&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Eagle+Lake&family=Libre+Barcode+128&family=Libre+Barcode+39&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Pulse</title>
+</head>
+<!-- scrolling nonsense-->
+<script>
+    window.addEventListener('scroll', checkFade);
+    window.addEventListener('DOMContentLoaded', checkFade);
+
+    function checkFade() {
+        const elements = document.querySelectorAll('.scroll-fade');
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 50 && rect.bottom > 0) {
+                el.classList.add('visible');
+            } else {
+                el.classList.remove('visible');
+            }
+        });
+    }
+</script>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-black navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pulse</a>
+            <button class="navbar-toggler" type="button" data-mdb-collapse-init
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#about"></i>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#contact"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-sect" id="hero">
+        <div class="hero-img-cont">
+            <video src="images/hero video.mp4" alt="hero img of particles" class="hero-img" autoplay loop muted
+                playsinline></video>
+            <div class="hero-title-overlay">
+                <h1 class="hero-title">Pulse</h1>
+                <h2 class="hero-subtitle">Where the magic begins</h2>
+            </div>
+        </div>
+    </section>
+    <section class="about-sect" id="about">
+        <div class="main-about-cont scroll-fade">
+            <div class="about-img-cont">
+                <img src="images/about-img1.jpg" alt="abstract image" class="left-img-about" />
+                <img src="images/about-img2.jpg" alt="abstract image" class="right-img-about" />
+            </div>
+            <div class="about-txt scroll-fade">
+                <h2 class="section-title">Introduction</h2>
+                <h3 class="about-name">DJ Nova</h3>
+                <p class="about-para">Hello! I've been in the music industry a few years now. What originally began as a
+                    hobby quickly became a passion. I love creating music that puts people in the mood to dance and let
+                    go. I've always been inspired by space and the mysteries it holds. Much of my music takes
+                    inspiration from the
+                    beauty of the galaxy, I want my music to take you on a journey.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="mobile-img-break scroll-fade">
+        <img src="images/hero img.jpeg" alt="abstract image" class="mobile-img" />
+    </div>
+    <section class="music-sect" id="music">
+        <div class="main-music-cont">
+            <div class="about-txt scroll-fade">
+                <h2 class="section-title music">Music</h2>
+                <p class="about-para music">I would describe my music as mostly edm. Though I am open to anything I
+                    drift towards
+                    more electronic style music myself. I incorporate a lot of synths and sounds inspired by the world
+                    around me.
+                    I have done shows for a variety of audiences with a wide range of music tastes though. I love to do
+                    remixes and
+                    create new versions of beloved songs. My music is created with the intention of making people have a
+                    good time and lose
+                    themselves in the music.
+                </p>
+                <div class="music-logo-cont">
+                    <img src="images/power-btn-white.svg" class="music-logo" />
+                </div>
+            </div>
+            <div class="music-img-cont scroll-fade">
+                <img src="images/music-img.jpg" alt="abstract img" class="music-img" />
+                <p class="barcode">EDM IS THE BEST EVER</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="venue-sect" id="venue">
+        <div class="main-venue-cont scroll-fade">
+            <div class="box box1">Concerts</div>
+            <div class="box box2">Raves</div>
+            <div class="box box3">Weddings</div>
+            <div class="box box4">Birthdays</div>
+            <div class="box box5">Bars</div>
+            <div class="box box6">Festivals</div>
+            <div class="box box7">Clubs</div>
+            <div class="box box8">And More!</div>
+        </div>
+    </section>
+    <section class="contact-sect" id="contact">
+        <div class="main-contact-sect scroll-fade">
+            <div class="contact-img-cont">
+                <img src="images/hero img.jpeg" alt="abstract image" class="contact-img" />
+            </div>
+            <div class="contact-cont">
+                <div class="contact-col">
+                    <h3 class="section-title">Contact</h3>
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="submit-btn-wrapper">
+                            <button type="submit" class="submit-btn">Submit</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="white-line">
+    <footer>
+        <div class="footer-cont">
+            <p class="footer-txt">Designed by Madison Davis</p>
+            <img src="images/personal-logo-white.svg" alt="Personal Logo" class="footer-logo">
+        </div>
+    </footer>
+    <!-- for submission notification-->
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for contacting us! We look forward to getting your message and will respond as soon as we can!');
+            this.reset();
+        });
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.white-line').classList.add('visible');
+        });
+    </script>
+</body>
+
+</html>
