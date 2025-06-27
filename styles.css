@@ -54,6 +54,14 @@ section {
     overflow: hidden;
 }
 
+.nav-link:focus,
+.nav-link:focus-visible {
+    outline: none !important;
+    box-shadow: none;
+    border: solid 2px white;
+    border-radius: .5rem;
+}
+
 .nav-link::after {
     content: "";
     display: block;
