@@ -204,7 +204,6 @@ section {
     background: black;
     width: 100%;
     position: relative;
-    display: block;
 }
 
 /* music section */
@@ -493,7 +492,9 @@ section {
 
 footer {
     background-color: black;
-    height: 8vw;
+    min-height: 60px;
+    height: auto;
+    width: 100%;
     color: white;
 }
 
